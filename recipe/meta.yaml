@@ -31,7 +31,7 @@ about:
   home: https://github.com/erdc/ipymesh
   license: MIT
   license_family: MIT
-  license_file: LICENSE.md
+  license_file: LICENSE.txt
   summary: A Custom Mesh Widget Library
   doc_url: https://github.com/erdc/ipymesh
   dev_url: https://github.com/erdc/ipymesh
