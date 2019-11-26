@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.6.0
     - pip
+    - nodejs
   run:
     - python >=3.6.0
     - ipywidgets >=7.0.0
