@@ -1,5 +1,5 @@
 {% set name = "ipymesh" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 25a083d13cb19546fd43edc42f5535c8bff90ffdefedb88c422f39973394a5c8
+  sha256: 1dab9288b0d781d8797feefc0c551ec80882620fe292881e756e6ecb1369beae
 
 build:
   noarch: python
