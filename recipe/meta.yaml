@@ -1,13 +1,13 @@
 {% set name = "ipymesh" %}
 {% set version = "0.1.7" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3a6219449330fda67961b202bb3a7c0dbe2eb5449e64ea72f01b020546b634d5
 
 build:
@@ -17,14 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6.0
+    - python {{ python_min }}
     - pip
     - nodejs
   run:
-    - python >=3.6.0
+    - python >={{ python_min }}
     - ipywidgets >=7.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - {{ name }}
 
